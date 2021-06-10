@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41e0c00f0a.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Memory Game</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Memory Game</h1>
+        </header>
+
+        <select class="deck-size" id="deck-size">
+            <option value="2">2x2</option>
+            <option value="4">4x4</option>
+            <option value="6">6x6</option>
+        </select>
+
+        <section class="score-panel">
+        	<!-- <ul class="stars">
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star"></i></li>
+        	</ul> -->
+
+        	<span class="moves">0</span> Move(s) 
+
+            <span class="timer"></span>
+
+            <span class="restart" onclick=startGame()>Restart</span>
+        </section>
+
+        <ul class="deck">
+            <!-- <li class="card" type="img1">1</li>
+            <li class="card" type="img2">2</li>
+            <li class="card" type="img3">3</li>
+            <li class="card" type="img4">4</li>
+            <li class="card" type="img5">5</li>
+            <li class="card" type="img6">6</li>
+            <li class="card" type="img7">7</li>
+            <li class="card" type="img8">8</li>
+            <li class="card" type="img1">1</li>
+            <li class="card" type="img2">2</li>
+            <li class="card" type="img3">3</li>
+            <li class="card" type="img4">4</li>
+            <li class="card" type="img5">5</li>
+            <li class="card" type="img6">6</li>
+            <li class="card" type="img7">7</li>
+            <li class="card" type="img8">8</li> -->
+        </ul>
+        
+        <div class="congratulations"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
